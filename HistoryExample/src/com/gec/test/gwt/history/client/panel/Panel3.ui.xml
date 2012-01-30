@@ -4,7 +4,7 @@
 	<ui:style>
 		/* Add CSS here. See the GWT docs on UI Binder for more details */
 	</ui:style>
-	<g:HTMLPanel>
+	<g:HTMLPanel styleName="panelLabel">
 		This is panel 3.  Try pressing the "Back" button on the browser and see what happens.
 	</g:HTMLPanel>
 </ui:UiBinder> 
