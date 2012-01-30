@@ -52,14 +52,6 @@ public class NameDialogPanel extends Composite implements HasClickHandlers
         closeButton.setFocus(true);
     }
 
-    public NameDialogPanel(String firstName)
-    {
-        initWidget(uiBinder.createAndBindUi(this));
-
-        // Can access @UiField after calling createAndBindUi
-        closeButton.setText(firstName);
-    }
-
     @UiHandler("closeButton")
     void onClick(ClickEvent e)
     {
