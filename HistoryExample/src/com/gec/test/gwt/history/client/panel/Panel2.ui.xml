@@ -9,6 +9,7 @@
 	</ui:style>
 	<g:HTMLPanel>
 		<div class="panelLabel">Hello, this is panel 2.</div>
-		<div><g:Button ui:field="nextButton" text="Go to Panel3" /></div>
+		
+		<div><g:Button ui:field="prevButton" text="Go Back" styleName="navButton" /><g:Button ui:field="nextButton" text="Go to Panel3" /></div>
 	</g:HTMLPanel>
 </ui:UiBinder> 

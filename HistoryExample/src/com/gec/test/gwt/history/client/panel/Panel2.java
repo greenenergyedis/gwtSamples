@@ -25,6 +25,9 @@ public class Panel2 extends Composite
     @UiField
     Button nextButton;
 
+    @UiField
+    Button prevButton;
+
     public Panel2()
     {
         initWidget(uiBinder.createAndBindUi(this));
@@ -34,6 +37,12 @@ public class Panel2 extends Composite
     public void goNext(ClickEvent e)
     {
         History.newItem(Panel3.ID);
+    }
+
+    @UiHandler("prevButton")
+    public void goBack(ClickEvent e)
+    {
+        History.back();
     }
 
 }
